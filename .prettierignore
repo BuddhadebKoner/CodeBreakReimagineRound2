@@ -1,0 +1,33 @@
+# Ignore build output
+/dist
+
+# Ignore node_modules
+/node_modules
+
+# Ignore generated files
+/.cache
+/.vite
+
+# Ignore git files
+/.git
+
+# Ignore IDE and editor files
+/.vscode
+/.idea
+/.DS_Store
+
+# Ignore log files
+/*.log
+
+# Ignore test files
+/__tests__
+
+# Ignore coverage reports
+/coverage
+
+# Ignore temporary files
+/*.tmp
+
+# Ignore specific files or directories
+/src/assets
+/src/styles
