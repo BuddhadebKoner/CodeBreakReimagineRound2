@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/CodeBreakReimagineRound2",
+  // base: "/CodeBreakReimagineRound2",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
