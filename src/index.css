@@ -10,6 +10,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   background: #000;
+  user-select: none;
 }
 
 /* root */
