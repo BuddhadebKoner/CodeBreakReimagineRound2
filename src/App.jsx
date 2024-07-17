@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Herosections from "./components/Herosections";
+import Maincontext from "./components/Maincontext";
 import Lenis from "lenis";
 
 const lenis = new Lenis();
@@ -20,6 +21,7 @@ function App() {
    return (
       <>
          <Herosections />
+         <Maincontext/>
       </>
    );
 }

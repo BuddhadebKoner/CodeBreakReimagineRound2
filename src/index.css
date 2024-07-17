@@ -9,6 +9,7 @@ body {
   height: 300vh;
   overflow-y: auto;
   overflow-x: hidden;
+  /* background-color: #7D0000; */
   background: #000;
   user-select: none;
 }
@@ -17,7 +18,6 @@ body {
 #root {
   width: 100%;
   height: 100%;
-  background: #000;
   color: #fff;
 }
 /* default styles */
