@@ -8,8 +8,8 @@
 // import Locate_your_post_office_Icon from './Icons/Locate_your_post_office_Icon.svg'
 // import PLI_Logo from './Icons/PLI_Logo.svg'
 // import Post_office_savings_bank_Icon from './Icons/Post_office_savings_bank_Icon.svg'
-import navbarbg from './banners/navbar.jpg'
-import banner1 from './banners/banner1.jpg'
+import navbarbg from './banners/navbar.webp'
+import banner1 from './banners/banner1.webp'
 
 const assets ={
    icons: [],
