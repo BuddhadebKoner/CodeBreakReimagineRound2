@@ -16,13 +16,22 @@ export default function Components() {
                className="ShineBorder_main"
             >
                <div className="ShineBorder_intter">
-                  
                   <TypingAnimation
                      className="text-4xl font-bold text-white"
                      text="World Largest Posting platform"
                   />
                </div>
             </ShineBorder>
+            <div className="track_post_container">
+               <div className="track_post_container_card">
+                     <h1>Track A Mail or Package</h1>
+                     <input
+                        type="text"
+                        placeholder="Indicate your tracking number or delivery notice"
+                     />
+                     <a href="">Track Shipment</a>
+               </div>
+            </div>
          </div>
       </>
    );
