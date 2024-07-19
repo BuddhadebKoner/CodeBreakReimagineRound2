@@ -24,10 +24,10 @@ export default function Components() {
             </ShineBorder>
             <div className="track_post_container">
                <div className="track_post_container_card">
-                     <h1>Track A Mail or Package</h1>
+                     <h1>Track A Package</h1>
                      <input
                         type="text"
-                        placeholder="Indicate your tracking number or delivery notice"
+                        placeholder="Delivery Code"
                      />
                      <a href="">Track Shipment</a>
                </div>
