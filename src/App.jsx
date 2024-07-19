@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
-import Herosections from "./components/Herosections";
-import Maincontext from "./components/Maincontext";
 import Lenis from "lenis";
+import Home from "./pages/Home";
 
 const lenis = new Lenis();
 
@@ -20,8 +19,7 @@ requestAnimationFrame(raf);
 function App() {
    return (
       <>
-         <Herosections />
-         <Maincontext/>
+         <Home/>
       </>
    );
 }

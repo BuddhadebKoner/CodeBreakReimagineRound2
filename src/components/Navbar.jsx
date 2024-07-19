@@ -63,16 +63,16 @@ export default function Navbar() {
             <div className="data">
                <ul>
                   <li>
-                     <a href="#">home</a>
+                     <a href="#">Track Now</a>
                   </li>
                   <li>
-                     <a href="#">about</a>
+                     <a href="#">Parcel</a>
                   </li>
                   <li>
-                     <a href="#">services</a>
+                     <a href="#">About Us</a>
                   </li>
                   <li>
-                     <a href="#">contact</a>
+                     <a href="#">Buy Stams</a>
                   </li>
                </ul>
             </div>

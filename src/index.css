@@ -9,9 +9,9 @@ body {
   height: 300vh;
   overflow-y: auto;
   overflow-x: hidden;
-  /* background-color: #7D0000; */
-  background: rgb(239,6,15);
-  background: linear-gradient(105deg, rgba(239,6,15,1) 0%, rgba(182,12,242,1) 100%); 
+  background-color: black;
+  /* background: rgb(239,6,15);
+  background: linear-gradient(105deg, rgba(239,6,15,1) 0%, rgba(182,12,242,1) 100%);  */
   user-select: none;
 }
 

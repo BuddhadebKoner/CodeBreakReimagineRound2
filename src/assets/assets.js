@@ -10,14 +10,15 @@
 // import Post_office_savings_bank_Icon from './Icons/Post_office_savings_bank_Icon.svg'
 import navbarbg from './banners/navbar.webp'
 import banner1 from './banners/banner1.webp'
+import loadingGif from './loading/loadingpage.gif'
 
 const assets ={
    icons: [],
    banners: [
       {name : 'navbarbg' , src : navbarbg},
       {name: 'banner1' , src : banner1}
-
-   ]
+   ],
+   loadingGif,
 } 
 
 
