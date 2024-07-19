@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Lenis from "lenis";
 import Home from "./pages/Home";
+import assets from "./assets/assets";
 
 const lenis = new Lenis();
 
@@ -17,9 +18,25 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 function App() {
+   const [isLoading, setIsLoading] = useState(true);
+
+   useEffect(() => {
+      const timer = setTimeout(() => {
+         setIsLoading(false);
+      }, 1700);
+
+      return () => clearTimeout(timer); 
+   }, []);
+
    return (
       <>
-         <Home/>
+         {isLoading ? (
+            <div className="loading_container">
+               <img src={assets.loadingGif} alt="Loading" />
+            </div>
+         ) : (
+            <Home />
+         )}
       </>
    );
 }
