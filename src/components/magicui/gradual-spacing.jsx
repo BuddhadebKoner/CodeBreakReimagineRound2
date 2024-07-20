@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 export default function GradualSpacing({
   text,
-  duration = 3,
-  delayMultiple = 0.04,
+  duration = 2,
+  delayMultiple = 0.1,
 
   framerProps = {
     hidden: { opacity: 0, x: -20 },
