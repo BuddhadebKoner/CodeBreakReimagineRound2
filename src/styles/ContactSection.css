@@ -1,0 +1,152 @@
+.contact_section_container {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   background: white;
+}
+
+.contact_section_container_card {
+   width: 70rem;
+   height: 40rem;
+   border: 1px solid rgb(0, 0, 0);
+   padding: 10px;
+   border-radius: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+
+}
+
+.contact_section_information {
+   width: 40%;
+   height: 100%;
+   border-radius: 1rem;
+   background-image: url(../assets//banners/contact_card.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.contact_section_form {
+   width: 60%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+}
+
+.basic_information_input {
+   width: 100%;
+   height: fit-content;
+   flex-wrap: wrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contact_section_container {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   background: white;
+}
+
+.contact_section_container_card {
+   width: 70rem;
+   height: 40rem;
+   border: 1px solid rgb(0, 0, 0);
+   padding: 10px;
+   border-radius: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+
+}
+
+.contact_section_information {
+   width: 40%;
+   height: 100%;
+   border-radius: 1rem;
+   background-image: url(../assets//banners/contact_card.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.contact_section_form {
+   width: 60%;
+   height: 100%;
+}
+
+.basic_information_input {
+   width: 100%;
+   height: fit-content;
+   flex-wrap: wrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.basic_information_input input {
+   width: 300px;
+   margin: 10px;
+   height: 5rem;
+   font-size: 2rem;
+   color: black;
+   padding-left: 1rem;
+   border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.basic_information_input input {
+   width: 300px;
+   margin: 10px;
+   height: 5rem;
+   font-size: 2rem;
+   color: black;
+   padding-left: 1rem;
+   border-bottom: 1px solid rgb(0, 0, 0);
+}
+.message_section{
+   width: 100%;
+   display: flex;
+   align-items: start;
+   justify-content: start;
+   flex-direction: column;
+   color: black;
+   padding: 30px;
+}
+.message_section h1{
+   font-size: 1.4rem;
+   color: black;
+   font-weight: 600;
+   margin-right: auto;
+}
+.message_input{
+   width: 100%;
+   height: 4rem;
+   font-size: 1.3rem;
+   color: black;
+   padding-left: 1rem;
+   margin: auto;
+   border-bottom: 1px solid rgb(0, 0, 0);
+}
+.send_message_button{
+   color: white;
+   font-weight: 900;
+   margin: 50px 0 0 auto;
+   background: black;
+   color: white;
+   padding: 15px 50px;
+   border-radius: 10px;
+}

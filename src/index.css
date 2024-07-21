@@ -21,12 +21,33 @@ body {
   height: 100%;
   color: #fff;
 }
+
 /* default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+.lower_navbar {
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.navlogo {
+  width: 150px;
+}
+
+.navright {
+  width: 300px;
 }
 
 

@@ -4,18 +4,6 @@
   top: 0;
 }
 
-
-.lower_navbar {
-  width: 100%;
-  height: fit-content;
-  top: 0;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
 .uppernavbar {
   width: 100%;
   height: fit-content;
@@ -74,12 +62,4 @@
   align-items: center;
   justify-content: space-between;
   gap: 70px;
-}
-
-.navlogo {
-  width: 150px;
-}
-
-.navright {
-  width: 300px;
 }
