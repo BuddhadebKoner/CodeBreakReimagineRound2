@@ -1,82 +1,94 @@
-import React, { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "../styles/navbar.css";
 
 export default function Navbar() {
-   const container = useRef();
+  const location = useLocation();
+  const routeTitles = {
+    "/": "India Post - Home",
+    "/buystamp": "India Post - Buy Stamps",
+    "/percel": "India Post - Percel",
+    "/tracknow": "India Post - Track Now",
+    "/contactus": "India Post - Contact Us",
+    "/about": "India Post - About Us",
+  };
 
-   useGSAP(
-      () => {
-         const t1 = gsap.timeline({ paused: true });
+  const currentTitle = routeTitles[location.pathname] || "India Post";
 
-         t1.to(".one", 0.5, {
-            y: 6,
-            rotation: 45,
-            ease: "expo.inOut",
-         });
-         t1.to(".two", 0.5, {
-            y: -6,
-            rotation: -45,
-            ease: "expo.inOut",
-            delay: -0.5,
-         });
-
-         t1.to(".menu", 1.5, {
-            top: "0%",
-            ease: "expo.inOut",
-            delay: -0.5,
-         });
-
-         t1.staggerFrom(
-            ".menu ul li",
-            0.75,
-            { x: -30, opacity: 0, ease: "expo.out" },
-            0.1
-         );
-
-         t1.reverse();
-
-         const handleClick = () => {
-            t1.reversed(!t1.reversed());
-         };
-
-         const buttons = container.current.querySelectorAll(".toggle-btn, a");
-         buttons.forEach((btn) => btn.addEventListener("click", handleClick));
-
-         return () => {
-            buttons.forEach((btn) =>
-               btn.removeEventListener("click", handleClick)
-            );
-         };
-      },
-      { scope: container }
-   );
-
-   return (
-      <div ref={container}>
-         <div className="toggle-btn">
-            <span className="one"></span>
-            <span className="two"></span>
-         </div>
-         <div className="menu">
-            <div className="data">
-               <ul>
-                  <li>
-                     <a href="#">TRACK NOW</a>
-                  </li>
-                  <li>
-                     <a href="#">PARCEL</a>
-                  </li>
-                  <li>
-                     <a href="#">ABOUT US</a>
-                  </li>
-                  <li>
-                     <a href="#">BUY STAMPS</a>
-                  </li>
-               </ul>
+  return (
+    <>
+      <Helmet>
+        <title>{currentTitle}</title>
+      </Helmet>
+      <div className="navbar_container">
+        <div className="uppernavbar">
+          <div className="contactbar_container">
+            <div className="contactbar_container_btns">
+              <a href="tel:+4065550120">+(406) 555-0120</a>
+              <a href="mailto:ckctm12@gmail.com">ckctm12@gmail.com</a>
             </div>
-         </div>
+            <div className="contactbar_container_lang">
+              <a href="">English</a>
+            </div>
+          </div>
+          <div className="navlinks_container">
+            <div className="navbuttons">
+              <button className="navbutton">Sign Up / Register</button>
+            </div>
+            <div className="navlinks">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav_links_active" : "nav_links_normal"
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/buystamp"
+                className={({ isActive }) =>
+                  isActive ? "nav_links_active" : "nav_links_normal"
+                }
+              >
+                Buy Stamps
+              </NavLink>
+              <NavLink
+                to="/percel"
+                className={({ isActive }) =>
+                  isActive ? "nav_links_active" : "nav_links_normal"
+                }
+              >
+                Percel
+              </NavLink>
+              <NavLink
+                to="/tracknow"
+                className={({ isActive }) =>
+                  isActive ? "nav_links_active" : "nav_links_normal"
+                }
+              >
+                Track Now
+              </NavLink>
+              <NavLink
+                to="/contactus"
+                className={({ isActive }) =>
+                  isActive ? "nav_links_active" : "nav_links_normal"
+                }
+              >
+                Contact Us
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "nav_links_active" : "nav_links_normal"
+                }
+              >
+                About Us
+              </NavLink>
+            </div>
+          </div>
+        </div>
       </div>
-   );
+    </>
+  );
 }

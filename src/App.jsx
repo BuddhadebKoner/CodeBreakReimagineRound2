@@ -4,6 +4,7 @@ import Lenis from "lenis";
 import Home from "./pages/Home";
 import assets from "./assets/assets";
 import GradualSpacing from "./components/magicui/gradual-spacing";
+import Index from "./pages";
 
 const lenis = new Lenis();
 
@@ -20,7 +21,7 @@ function App() {
    useEffect(() => {
       const timer = setTimeout(() => {
          setIsLoading(false);
-      }, 3000);
+      }, 100); // 3 sec
 
       return () => clearTimeout(timer);
    }, []);
@@ -29,14 +30,14 @@ function App() {
       <>
          {isLoading ? (
             <div className="loading_container">
-               <img src={assets.indiapost} alt="" />
+               <img src={assets.logo} alt="" />
                <GradualSpacing
                   className="loading_container_text"
                   text="INDIA&nbsp;&nbsp;POST"
                ></GradualSpacing>
             </div>
          ) : (
-            <Home />
+            <Index/>
          )}
       </>
    );
