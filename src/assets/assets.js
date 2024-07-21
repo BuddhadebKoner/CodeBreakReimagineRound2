@@ -11,10 +11,12 @@
 
 import navbar_right from './Icons/navbar_right.svg'
 import logo from './Icons/indiapost_logo.svg'
+import aboutBanner from './banners/about_hero.jpg'
 
 const assets ={
    navbar_right,
-   logo
+   logo,
+   aboutBanner
 } 
 
 

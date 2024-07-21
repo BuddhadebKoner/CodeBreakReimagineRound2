@@ -23,7 +23,7 @@ export default function ContactSection() {
                         id=""
                         placeholder="Write Your message"
                      />
-                     <button type="submit" className="send_message_button">
+                     <button type="submit" className="send_message_button send_message_button_extra">
                         Send Message
                      </button>
                   </div>

@@ -1,0 +1,102 @@
+.about_section_container {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   background: white;
+   color: black;
+}
+
+.about_section_container_card {
+   width: 70rem;
+   height: 40rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+   padding: 10px;
+   border-radius: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+
+.about_section_information {
+   width: 40%;
+   height: 100%;
+   border-radius: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.about_section_content {
+   width: 60%;
+   height: 100%;
+   padding: 1rem 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+}
+
+.basic_information_content {
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+   gap: 1rem;
+}
+
+
+.basic_information_content p {
+   width: fit-content;
+   font-size: 1rem;
+   color: black;
+   text-align: left;
+}
+
+.basic_information_content h1{
+   font-size: 3rem;
+   color: black;
+   font-weight: 500;
+}
+.basic_information_content_btns{
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: flex-start;
+   margin-top: 30px;
+   gap: 40px;
+}
+.send_message_button_login{
+   background: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   border-radius: 100px;
+}
+.send_message_button_register{
+   border: 1px solid black;
+   border-radius: 100px;
+}
+
+.bio_section h1 {
+   font-size: 1.rem;
+   color: black;
+   font-weight: 600;
+   margin-right: auto;
+}
+
+.bio_content {
+   width: 100%;
+   font-size: 1.3rem;
+   color: black;
+   padding-left: 1rem;
+   margin: auto;
+   border-bottom: 1px solid rgb(0, 0, 0);
+}

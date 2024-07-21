@@ -59,7 +59,7 @@ export default function Navbar() {
                   isActive ? "nav_links_active" : "nav_links_normal"
                 }
               >
-                Percel
+                Parcel
               </NavLink>
               <NavLink
                 to="/tracknow"
