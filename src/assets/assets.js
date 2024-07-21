@@ -12,11 +12,17 @@
 import navbar_right from './Icons/navbar_right.svg'
 import logo from './Icons/indiapost_logo.svg'
 import aboutBanner from './banners/about_hero.jpg'
+import call from './Icons/bxs_phone-call.svg'
+import location from './Icons/carbon_location-filled.svg'
+import mail from './Icons/ic_sharp-email.svg'
 
 const assets ={
    navbar_right,
    logo,
-   aboutBanner
+   aboutBanner,
+   call,
+   location,
+   mail
 } 
 
 
