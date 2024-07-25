@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="uppernavbar">
           <div className="contactbar_container">
             <div className="contactbar_container_btns">
-              <a href="tel:+4065550120">+(406) 555-0120</a>
+              <a href="tel:+4065550120">+(406)555-0120</a>
               <a href="mailto:ckctm12@gmail.com">ckctm12@gmail.com</a>
             </div>
             <div className="contactbar_container_lang">

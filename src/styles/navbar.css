@@ -39,6 +39,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  font-size: 15px;
+}
+.contactbar_container_lang {
+  font-size: 15px;
 }
 
 .navbuttons {
