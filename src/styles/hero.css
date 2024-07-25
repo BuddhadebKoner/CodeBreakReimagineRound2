@@ -34,10 +34,18 @@
 }
 
 .hero_btn{
-  font-size: 2rem;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 2px 30px;
+  width: fit-content;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_btn a{
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero_content_glassbox{

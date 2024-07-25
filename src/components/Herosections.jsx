@@ -22,7 +22,18 @@ export default function Herosections() {
                   <p>speed post kardo na !</p>
                </BoxReveal>
                <BoxReveal boxColor={"#ffffff"} duration={speedOfHeroText}>
-                  <button className="hero_btn">Post Now</button>
+                  <div className="hero_btn">
+                     <a
+                        className="group relative inline-block overflow-hidden border-white focus:outline-none focus:ring"
+                        href="#"
+                     >
+                        <span className="absolute inset-x-0 bottom-0 h-[2px] bg-white transition-all group-hover:h-full group-active:bg-white"></span>
+
+                        <span className="relative text-xl font-bold font-sans text-white transition-colors group-hover:text-black">
+                           TRACK NOW
+                        </span>
+                     </a>
+                  </div>
                </BoxReveal>
             </div>
          </div>
