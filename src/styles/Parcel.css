@@ -29,76 +29,161 @@
    color: #721c24;
 }
 
-.form-container {
-   max-width: 600px;
-   margin: 0 auto;
-   padding: 20px;
-   border: 1px solid #ddd;
-   border-radius: 8px;
-   background-color: #ada7a7;
-}
 
-.form-group {
-   margin-bottom: 15px;
-}
-
-.form-group label {
-   display: block;
-   margin-bottom: 5px;
-   font-weight: bold;
-}
-
-.form-control {
+/* General Container */
+.pincode_section_container {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   background: transparent; /* Dark background color */
+   overflow: hidden;
+ }
+ 
+ /* Card Container */
+ .pincode_section_container_card {
+   width: 70rem;
+   padding: 2rem;
+   border-radius: 1.5rem;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Deeper shadow for premium look */
+   background: linear-gradient(145deg, #000000, #2c2c2c); /* Gradient background */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ /* Header Styling */
+ .pincode_section_header {
    width: 100%;
-   padding: 8px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-color: black;}
-
-.error-message {
-   color: #dc3545;
-   font-size: 0.875em;
-}
-
-.or-text {
+   text-align: center;
+   margin-bottom: 2rem;
+ }
+ 
+ .pincode_section_header h1 {
+   font-size: 2rem;
+   font-weight: 700;
+   color: #e0e0e0; /* Light gray text for header */
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for a glowing effect */
+ }
+ 
+ .pincode_section_header p {
+   font-size: 1.2rem;
+   color: #b0b0b0; /* Lighter gray text for subtitle */
+ }
+ 
+ /* Form Styling */
+ .pincode_section_form {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ /* Form Group Styling */
+ .form-horizontal {
+   width: 100%;
+ }
+ 
+ .form-group {
+   margin: 1.5rem 0;
+   position: relative;
+ }
+ 
+ /* Label Styling */
+ .form-group label {
    display: block;
-   text-align: center;
-   font-weight: bold;
-}
-
-.btn {
-   display: inline-block;
-   padding: 10px 20px;
-   font-size: 1em;
-   color: #fff;
-   background-color: #007bff;
+   margin-bottom: 0.5rem;
+   font-weight: 600;
+   color: #e0e0e0; /* Light gray text for labels */
+ }
+ 
+ /* Form Control Styling */
+ .form-control {
+   width: 100%;
+   padding: 0.75rem 1rem;
+   font-size: 1rem;
    border: none;
-   border-radius: 4px;
+   background: #333333; /* Darker background for inputs */
+   color: #ffffff; /* White text for inputs */
+   border-radius: 8px;
+   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
+   transition: background 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .form-control:focus {
+   background: #444444; /* Slightly lighter on focus */
+   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Glow effect on focus */
+   outline: none;
+ }
+ 
+ /* Error Message Styling */
+ .error-message {
+   color: #ff6f6f; /* Soft red color for error messages */
+   font-size: 0.9rem;
+ }
+ 
+ /* OR Text Styling */
+ .or-text {
+   font-size: 1.2rem;
+   margin: 1.5rem 0;
+   color: #b0b0b0; /* Light gray color for OR text */
+   font-weight: 500;
+ }
+ 
+ /* Button Styling */
+ .btn {
+   padding: 0.75rem 1.5rem;
+   font-size: 1.1rem;
+   background-color: #555555; /* Dark gray background for button */
+   color: #ffffff; /* White text for button */
+   border: none;
+   border-radius: 8px;
    cursor: pointer;
-   text-align: center;
-}
-
-.btn:hover {
-   background-color: #0056b3;
-}
-
-#search-results {
-   margin-top: 20px;
-}
-
-#results-table {
+   transition: background 0.3s ease, transform 0.2s ease;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Button shadow */
+ }
+ 
+ .btn:hover {
+   background-color: #666666; /* Lighter background on hover */
+   transform: scale(1.05); /* Slightly enlarge on hover */
+ }
+ 
+ /* Search Results Styling */
+ .search-results {
+   margin-top: 1.5rem;
+   width: 100%;
+ }
+ 
+ /* Table Styling */
+ #results-table {
    width: 100%;
    border-collapse: collapse;
-}
-
-#results-table th, #results-table td {
-   padding: 10px;
-   border: 1px solid #ddd;
-   text-align: left;
-}
-
-#no-results {
+ }
+ 
+ #results-table th,
+ #results-table td {
+   border: 1px solid #444444; /* Darker border for table */
+   padding: 0.75rem;
+   color: #e0e0e0; /* Light gray text for table */
+ }
+ 
+ #results-table th {
+   background: #555555; /* Slightly lighter header background */
+ }
+ 
+ /* No Results Styling */
+ .no-results {
    text-align: center;
-   padding: 20px;
-   color: #6c757d;
-}
+   margin-top: 1.5rem;
+ }
+ 
+ .no-results-text {
+   font-size: 1.2rem;
+   color: #b0b0b0; /* Light gray color for no results text */
+ }
+ 
