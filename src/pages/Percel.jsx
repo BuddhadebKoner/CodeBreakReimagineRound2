@@ -1,16 +1,26 @@
-import React from "react";
-import assets from "@/assets/assets";
+import React, { useState } from "react";
 import "../styles/Parcel.css";
 import { Link } from "react-router-dom";
+import assets from "@/assets/assets";
+import { statesAndUTs, cities } from "@/assets/assets"; // Ensure the path is correct
 
 export default function Percel() {
+   const [selectedState, setSelectedState] = useState('');
+   const [districts, setDistricts] = useState([]);
+
+   const handleStateChange = (e) => {
+      const state = e.target.value;
+      setSelectedState(state);
+      setDistricts(cities[state] || []);
+   };
+
    return (
       <>
          <div className="lower_navbar">
             <Link to="/">
-               <img src={assets.logo} alt="" className="navlogo" />
+               <img src={assets.logo} alt="Logo" className="navlogo" />
             </Link>
-            <img src={assets.navbar_right} alt="" className="navright" />
+            <img src={assets.navbar_right} alt="Navbar Right" className="navright" />
          </div>
          <div className="pincode_section_container">
             <div className="pincode_section_container_card">
@@ -24,9 +34,18 @@ export default function Percel() {
                         <label htmlFor="state-select">
                            State / Union Territory
                         </label>
-                        <select id="state-select" className="form-control">
+                        <select 
+                           id="state-select" 
+                           className="form-control"
+                           value={selectedState}
+                           onChange={handleStateChange}
+                        >
                            <option value="-1">--Select--</option>
-                           {/* Add options here */}
+                           {statesAndUTs.map((state, index) => (
+                              <option key={index} value={state}>
+                                 {state}
+                              </option>
+                           ))}
                         </select>
                         <small className="error-message"></small>
                      </div>
@@ -35,7 +54,11 @@ export default function Percel() {
                         <label htmlFor="district-select">City / District</label>
                         <select id="district-select" className="form-control">
                            <option value="-1">--Select--</option>
-                           {/* Add options here */}
+                           {districts.map((city, index) => (
+                              <option key={index} value={city}>
+                                 {city}
+                              </option>
+                           ))}
                         </select>
                         <small className="error-message"></small>
                      </div>
