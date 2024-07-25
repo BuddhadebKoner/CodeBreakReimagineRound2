@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Lenis from "lenis";
-import Home from "./pages/Home";
 import assets from "./assets/assets";
 import GradualSpacing from "./components/magicui/gradual-spacing";
 import Index from "./pages";
@@ -9,7 +8,7 @@ import Index from "./pages";
 const lenis = new Lenis();
 
 function raf(time) {
-   lenis.raf(time);
+   lenis.raf(time); 
    requestAnimationFrame(raf);
 }
 
