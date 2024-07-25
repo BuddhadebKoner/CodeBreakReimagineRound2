@@ -341,7 +341,7 @@ export default function components() {
 
                   <div className="mt-16 flex items-center justify-center">
                      <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
-                        Copyright &copy; By india post Just recreation For education Purpous
+                        Copyright &copy; By india post Just recreation For education Purpose
                      </p>
                   </div>
                </div>

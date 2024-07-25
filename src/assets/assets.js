@@ -15,6 +15,11 @@ import aboutBanner from './banners/about_hero.jpg'
 import call from './Icons/bxs_phone-call.svg'
 import location from './Icons/carbon_location-filled.svg'
 import mail from './Icons/ic_sharp-email.svg'
+import stamp1 from './stamps/1.jpeg'
+import stamp2 from './stamps/2.jpeg'
+import stamp3 from './stamps/3.jpeg'
+
+
 
 const assets ={
    navbar_right,
@@ -22,7 +27,10 @@ const assets ={
    aboutBanner,
    call,
    location,
-   mail
+   mail,
+   stamp1,
+   stamp2,
+   stamp3
 } 
 
 

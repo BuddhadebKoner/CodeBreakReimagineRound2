@@ -13,7 +13,6 @@ import AboutUs from "./pages/AboutUs.jsx";
 import BuyStamps from "./pages/BuyStamps.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Percel from "./pages/Percel.jsx";
-import TrackNow from "./pages/TrackNow.jsx";
 
 
 
@@ -41,7 +40,6 @@ const Main = () => {
          <Route path="buystamp" element={<BuyStamps/>}/>
          <Route path="contactus" element={<ContactUs/>}/>
          <Route path="percel" element={<Percel/>}/>
-         <Route path="tracknow" element={<TrackNow/>}/>
       </Route>)
    );
 

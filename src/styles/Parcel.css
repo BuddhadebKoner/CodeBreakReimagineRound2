@@ -1,0 +1,104 @@
+/* Percel.css */
+
+.header {
+   margin: 20px 0;
+   text-align: center;
+}
+
+.header h1 {
+   font-size: 1.5em;
+   color: #000;
+}
+
+.faq-link {
+   color: #007bff;
+   text-decoration: none;
+   font-size: 0.9em;
+}
+
+.faq-link:hover {
+   text-decoration: underline;
+}
+
+#error-message {
+   display: none;
+   margin: 10px 0;
+   padding: 10px;
+   border: 1px solid #dc3545;
+   background-color: #f8d7da;
+   color: #721c24;
+}
+
+.form-container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   background-color: #ada7a7;
+}
+
+.form-group {
+   margin-bottom: 15px;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+.form-control {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+color: black;}
+
+.error-message {
+   color: #dc3545;
+   font-size: 0.875em;
+}
+
+.or-text {
+   display: block;
+   text-align: center;
+   font-weight: bold;
+}
+
+.btn {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 1em;
+   color: #fff;
+   background-color: #007bff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   background-color: #0056b3;
+}
+
+#search-results {
+   margin-top: 20px;
+}
+
+#results-table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+   padding: 10px;
+   border: 1px solid #ddd;
+   text-align: left;
+}
+
+#no-results {
+   text-align: center;
+   padding: 20px;
+   color: #6c757d;
+}

@@ -9,7 +9,6 @@ export default function Navbar() {
     "/": "India Post - Home",
     "/buystamp": "India Post - Buy Stamps",
     "/percel": "India Post - Percel",
-    "/tracknow": "India Post - Track Now",
     "/contactus": "India Post - Contact Us",
     "/about": "India Post - About Us",
   };
@@ -60,14 +59,6 @@ export default function Navbar() {
                 }
               >
                 Parcel
-              </NavLink>
-              <NavLink
-                to="/tracknow"
-                className={({ isActive }) =>
-                  isActive ? "nav_links_active" : "nav_links_normal"
-                }
-              >
-                Track Now
               </NavLink>
               <NavLink
                 to="/contactus"
